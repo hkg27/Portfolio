@@ -8,18 +8,43 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="top">
-        <div >
-            <header>
-            <a href="#"><h2>NO1<span>HKG</span></h2> </a>
-            </header>
+       <nav class="nav">
+        <div class="logo">
+            HKG
         </div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="resume.html">resume</a>
-            <a href="">services</a>
-            <a href="">projects</a>
-        </nav>
+        <div class="links">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    <nav class="ham">
+        <div class="hlogo">
+            HKG
+        </div>
+        <div class="menu">
+            <div class="hi" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            
+
+            </div>
+            <div class="links2">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
         
     </div>
     <div class="main">
@@ -37,6 +62,12 @@
             <img class="image" src="hkgg.png">
         </div>
     </div>
-    
+    <script >
+        function toggleMenu(){
+            const toggleButton = document.querySelector('.hi');
+        const navbarLinks = document.querySelector('.links2');
+        navbarLinks.classList.toggle("open");
+        toggleButton.classList.toggle("open");
+        }</script>
 </body>
 </html>
