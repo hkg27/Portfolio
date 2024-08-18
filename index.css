@@ -1,18 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 body{
-    background-color: rgb(20, 20, 37);
-    color: gainsboro;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: monospace;
+    
+}
+p{
+    font-size: 20px;
 }
 .logo{
     font-family:Oswald;
-    font-size: 2.2vw;
+    font-size: 3.5vw;
     font-weight: bolder;
 }
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
+    height: 20vh;
 }
 .links ul{
     list-style: none;
@@ -33,7 +36,7 @@ nav{
 
 .ham{
     font-family:Oswald;
-    font-size: 4.2vw;
+    font-size: 30px;
     display: none;
 }
 .menu{
@@ -62,10 +65,8 @@ nav{
     overflow: hidden;
     top:100%;
     right: 0;
-    background-color: white;
-    width: fit-content;
+    width: auto;
     max-height: 0;
-    
     transition: all 0.3 ease-in-out;
 
 }
@@ -79,6 +80,7 @@ nav{
 .links2.open{
     font-size: 1.25rem;
     max-height: 300px;
+    max-width: fit-content;
 }
 
 
@@ -101,42 +103,88 @@ nav{
 .hi.open :last-child{
     transform: none; 
 }
-
-.top{
-    cursor:pointer;
-}
-header a{
-    text-decoration: none;
-    color: gainsboro;
-}
-header span{
-    color: aqua;
-}
-header h2:hover{
-    
-    color: aqua;
-    
-}
-nav{
-    font-size: medium;
-    float: right;
-
-}
-nav a{
-    font-size: large;
-    margin: 2vw;
-    text-decoration: none;
-    font-weight: bold;
-    color: gainsboro;
-}
-.main{
+.container{
+    justify-items: center;
+    margin: 10vw;
     display: grid;
     grid-template-columns: 50% 50%;
-    margin: 15vh;
+    
 }
-.image{
-    filter: drop-shadow(2px 2px 10px rgb(11, 233, 245)
-    );
-    height: 50vh;
-    float: right;
+.photo, .details{ 
+    margin-inline-start: 5vw;
+    margin-inline-end: 5vw;
+}
+.photo{
+    margin-bottom: 10px;
+    height: 300px;
+    border-radius: 50px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.resume{
+    margin: 20px;
+}
+.resume button{
+    background-color: transparent;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    padding-inline: 15px;
+    cursor: pointer;
+    margin: 10px;
+    border: 1px solid black;
+}
+.resume a{
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.container2{
+    margin: 10vw;
+}
+.container2 h{
+    font-family: Oswald;
+    font-size: 40px;
+}
+.container2 a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.container2 span{
+    color: gray;
+}
+.aboutboxes{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 15px;
+    justify-content: space-around;
+    
+}
+.icons{
+    height: 40px;
+}
+.left, .right{
+    margin: 10px;
+    padding:15px;
+    border: 1px solid black ;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:1200px){
+    .nav{
+        display: none;
+    }
+    .ham{
+        display: flex;
+    }
+    .container{
+        display: inline;
+    }
+    .aboutboxes{
+        display: inline;
+
+    }
 }
