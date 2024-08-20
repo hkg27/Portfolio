@@ -163,6 +163,9 @@ nav{
     justify-content: space-around;
     
 }
+button:hover{
+    filter: drop-shadow(1px 1px 5px  gray);
+}
 .icons{
     height: 40px;
 }
@@ -172,14 +175,14 @@ nav{
     border: 1px solid black ;
     border-radius: 10px;
 }
-.container3 {
+.container3, .container4 {
     margin: 10vw;
 }
 .container3 .left,.container3 .right{
     text-align: center;
 
 }
-.container3 h{
+.container3 h, .container4 h{
     font-family: Oswald;
     font-size: 40px;
 }
@@ -201,19 +204,46 @@ nav{
     border-radius: 5px;
 
 }
+.contactProfiles, .otherprofiles{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    
+}
+.contactProfiles a, .otherprofiles a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.contactProfiles a:hover, .otherprofiles a:hover{
+    filter: drop-shadow(1px 1px 5px  gray);
+}
 
 @media screen and (max-width:1200px){
+
     .nav{
         display: none;
     }
     .ham{
         display: flex;
     }
+
     .container{
         display: inline;
     }
+    .photo{
+        height: 250px;
+    }
     .aboutboxes{
         display: inline;
-
     }
+    .container2, .container3, .container4 {
+        margin: 1vw;
+    }
+    .contactProfiles, .otherprofiles{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-block: 5vh;
+    }
+
 }
