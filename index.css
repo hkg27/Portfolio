@@ -218,7 +218,39 @@ button:hover{
 .contactProfiles a:hover, .otherprofiles a:hover{
     filter: drop-shadow(1px 1px 5px  gray);
 }
-
+.container5{
+    justify-items: center;
+    margin: 2vw;
+    padding: 2vw;
+}
+.ms{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    overflow: auto;
+    position: reloative;
+    scroll-behavior: smooth;
+} 
+.cs{
+    min-width: 450px;
+    height: 300px;
+    cursor: pointer;
+    margin-inline: 1vw;
+    padding: 5px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.cs img{
+    height: 300px;
+    border-radius: 50px;
+}
+.x {
+    margin: 2vw;
+}
 @media screen and (max-width:1200px){
 
     .nav{
